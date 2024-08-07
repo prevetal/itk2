@@ -130,6 +130,12 @@
     }
 
 
+    header .menu_item .sub_menu .mob_head
+    {
+        display: flex;
+    }
+
+
     header .menu_item .sub_menu .cont
     {
         position: absolute;

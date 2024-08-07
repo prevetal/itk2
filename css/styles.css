@@ -845,7 +845,7 @@ header .menu_item .sub_menu .mob_head
     top: 0;
     left: 0;
 
-    display: flex;
+    display: none;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -1155,6 +1155,11 @@ header .menu_item .sub_menu .levels .links.show
 header .menu_item .sub_menu .links > *
 {
     display: flex;
+}
+
+header .menu_item .sub_menu .links > *.mob_head
+{
+    display: none;
 }
 
 
