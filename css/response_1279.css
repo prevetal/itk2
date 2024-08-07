@@ -1,0 +1,330 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .cont
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*--------------
+        Bg green
+    --------------*/
+    .bg_green
+    {
+        padding: 40px 0;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 32px;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 28px;
+        padding-bottom: 0;
+    }
+
+
+
+    .pagination .more
+    {
+        display: block;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .sep
+    {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+
+    header .menu_item + .menu_item
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .categories
+    {
+        justify-content: space-between;
+
+        margin-left: 0;
+    }
+
+
+    .page_head .categories > *
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -20px;
+        margin-left: 0;
+    }
+
+
+    .articles .row > *
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .data
+    {
+        width: 100%;
+    }
+
+
+    .article_info .article_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .article_info .slider
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .article_info .slider .thumbs
+    {
+        padding: 0 40px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .feedback
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+
+    /*------------
+        Catalog
+    ------------*/
+    .catalog .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+
+    /*------------
+        Products
+    ------------*/
+    .products .row > *
+    {
+        width: calc(33.333% - 24px);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data
+    {
+        width: 100%;
+    }
+
+
+    .product_info .product_title
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .product_info .slider
+    {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+
+    .product_info .slider .thumbs
+    {
+        padding: 0 40px;
+    }
+
+
+
+    .product_info .features,
+    .product_info .add_features
+    {
+        width: 100%;
+    }
+
+
+    .product_info .add_features .block_head
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .item
+    {
+        padding: 16px 16px 30px;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .row
+    {
+        margin-left: -20px;
+    }
+
+    .partners .row > *
+    {
+        width: calc(33.333% - 20px);
+        margin-left: 20px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .top .menu_item + .menu_item
+    {
+        margin-left: 0;
+    }
+
+
+    footer .company
+    {
+        border-bottom: 1px solid rgba(210, 224, 202, .25);
+    }
+
+
+    footer .department
+    {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 23px;
+        padding-left: 0;
+
+        border-top: 1px solid rgba(210, 224, 202, .25);
+        border-left: none;
+    }
+
+    footer .department.general
+    {
+        width: 100%;
+    }
+
+
+    footer .department .contacts
+    {
+        justify-content: flex-start;
+
+        margin-left: -40px;
+    }
+
+
+    footer .department .contacts > *
+    {
+        margin-left: 40px;
+    }
+
+    footer .department .contacts > *:nth-child(2n)
+    {
+        min-width: 0;
+    }
+
+
+    footer .department .contacts > *.location
+    {
+        width: calc(100% - 40px);
+    }
+
+
+    footer .department .link
+    {
+        top: 13px;
+    }
+
+    footer .department.general .link
+    {
+        top: 17px;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 0;
+        padding-top: 20px;
+
+        border-top: 1px solid rgba(210, 224, 202, .25);
+    }
+
+
+    footer .socials
+    {
+        margin-left: auto;
+    }
+}

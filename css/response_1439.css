@@ -1,0 +1,202 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .block
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .cont
+    {
+        padding: 0 24px;
+    }
+
+
+
+    /*--------------
+        All link
+    --------------*/
+    .all_link
+    {
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .categories
+    {
+        padding-bottom: 0;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        height: 550px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .row
+    {
+        margin-bottom: -24px;
+    }
+
+
+    .articles .row > *
+    {
+        margin-bottom: 24px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .data
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .article_info .slider
+    {
+        width: calc(50% - 12px);
+        margin-top: 0;
+    }
+
+
+
+    /*------------
+        Catalog
+    ------------*/
+    .catalog .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .catalog .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*------------
+        Products
+    ------------*/
+    .products .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+
+    .products .row > *
+    {
+        width: calc(25% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .data
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .product_info .slider
+    {
+        width: calc(50% - 12px);
+        margin-top: 0;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .about_info .image
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .about_info .line
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .department
+    {
+        width: 400px;
+        margin-left: 24px;
+        padding: 13px 0 13px 23px;
+    }
+
+    footer .department.general
+    {
+        width: 384px;
+    }
+
+
+    footer .department .contacts
+    {
+        justify-content: space-between;
+
+        margin-top: 20px;
+        margin-left: -24px;
+    }
+
+
+    footer .department .contacts > *
+    {
+        margin-left: 24px;
+    }
+
+    footer .department .contacts > *:nth-child(2n)
+    {
+        min-width: 210px;
+    }
+
+
+
+    footer .bottom
+    {
+        margin-top: 40px;
+    }
+}

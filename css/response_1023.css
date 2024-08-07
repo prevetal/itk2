@@ -1,0 +1,450 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .sep
+    {
+        margin-right: auto;
+        margin-left: 20px;
+    }
+
+
+    header .menu
+    {
+        position: fixed;
+        top: 0;
+        left: 100%;
+
+        display: block;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 140px 10px 40px;
+
+        transition: transform .3s linear;
+
+        color: #fff;
+    }
+
+
+    header .menu:before
+    {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: calc(100% - 100px);
+
+        content: '';
+
+        background: url(../images/bg_advantages.jpg) calc(100% + 40px) 100% no-repeat #016629;
+    }
+
+
+    header .menu.show
+    {
+        transform: translateX(-100%);
+    }
+
+
+    header .menu_item + .menu_item
+    {
+        margin-top: 24px;
+    }
+
+
+    header .menu_item > a
+    {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+
+    header .menu_item > a:before,
+    header .menu_item > a:after
+    {
+        border-color: #fff;
+    }
+
+
+    header .menu_item:hover > a,
+    header .menu_item > a.active,
+    header .menu_item > a.selected
+    {
+        color: #fff;
+    }
+
+
+    header .menu_item .sub_menu
+    {
+        top: 0;
+        left: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 0;
+
+        transition: left .2s linear;
+
+        color: var(--text_color);
+        background: #eefff5;
+    }
+
+
+    header .menu_item .sub_menu.show
+    {
+        left: 0;
+    }
+
+
+    header .menu_item .sub_menu .cont
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        width: 100%;
+        height: calc(100% - 100px);
+    }
+
+
+    header .menu_item .sub_menu > .close_btn
+    {
+        display: none;
+    }
+
+
+    header .menu_item .sub_menu .tabs,
+    header .menu_item .sub_menu .tabs.vertical
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        overflow: auto;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        width: 100%;
+        height: 100%;
+        padding: 20px 10px;
+
+        overscroll-behavior-y: contain;
+    }
+
+
+    header .menu_item .sub_menu .tabs .btn
+    {
+        margin: 0;
+
+        text-align: left;
+    }
+
+
+    header .menu_item .sub_menu .tabs .btn + .btn
+    {
+        margin-top: 16px;
+    }
+
+
+    header .menu_item .sub_menu .tab_content,
+    header .menu_item .sub_menu .tab_content.active,
+    header .menu_item .sub_menu .tabs.vertical ~ .tab_content,
+    header .menu_item .sub_menu .tabs.vertical ~ .tab_content.active
+    {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 100%;
+
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 20px;
+
+        transition: left .2s linear;
+
+        opacity: 1;
+        color: var(--text_color);
+        background: #eefff5;
+    }
+
+
+    header .menu_item .sub_menu .tab_content.active,
+    header .menu_item .sub_menu .tabs.vertical ~ .tab_content.active
+    {
+        left: 0;
+    }
+
+
+    header .menu_item .sub_menu .tabs.vertical ~ .tab_content.active:before
+    {
+        display: none;
+    }
+
+
+    header .menu_item .sub_menu .level,
+    header .menu_item .sub_menu .level + .level
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+
+        pointer-events: none;
+    }
+
+
+    header .menu_item .sub_menu .level .links
+    {
+        position: absolute;
+        top: 0;
+        left: 100%;
+
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 20px;
+
+        transition: left .2s linear;
+        pointer-events: auto;
+
+        color: var(--text_color);
+        background: #eefff5;
+    }
+
+
+    header .menu_item .sub_menu .level .links.show
+    {
+        left: 0;
+    }
+
+
+    header .menu_item .sub_menu .links .mob_head,
+    header .menu_item .sub_menu .tab_content > .mob_head
+    {
+        top: auto;
+        bottom: 100%;
+
+        display: flex;
+    }
+
+
+    header .menu_item .sub_menu .links > *
+    {
+        display: block;
+    }
+
+
+    header .menu_item .sub_menu .links a br
+    {
+        display: none;
+    }
+
+
+    header .mob_menu_btn
+    {
+        display: flex;
+    }
+
+
+
+    body.menu_selected header .logo,
+    body.menu_selected header .sep,
+    body.menu_selected header .mob_menu_btn
+    {
+        z-index: -1;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .cont
+    {
+        height: 711px;
+    }
+
+
+    .first_section .title .span1
+    {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+
+    .first_section .title .span2
+    {
+        padding: 0 24px;
+    }
+
+
+
+    /*------------
+        Catalog
+    ------------*/
+    .catalog .row
+    {
+        margin-left: -20px;
+    }
+
+
+    .catalog .row > *
+    {
+        width: calc(50% - 20px);
+        margin-left: 20px;
+    }
+
+
+
+    /*------------
+        Products
+    ------------*/
+    .products .row
+    {
+        margin-left: -20px;
+    }
+
+
+    .products .row > *
+    {
+        width: calc(50% - 20px);
+        margin-left: 20px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .data
+    {
+        width: 100%;
+    }
+
+
+    .about_info .image
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+
+    .advantages .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .advantages .item
+    {
+        padding: 20px 24px 40px;
+    }
+
+
+    .advantages .bg
+    {
+        right: -40px;
+
+        min-width: 48px;
+        height: auto;
+    }
+
+
+
+    /*--------------
+        Partners
+    --------------*/
+    .partners .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .top
+    {
+        padding-bottom: 15px;
+    }
+
+
+
+    footer .top .menu
+    {
+        justify-content: space-between;
+
+        width: calc(100% + 40px);
+        margin-top: 16px;
+        margin-left: -20px;
+    }
+}
