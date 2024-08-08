@@ -242,6 +242,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		$('header .menu_item > a.sub_link').removeClass('selected')
 		parent.removeClass('show')
+
+		$('body').removeClass('menu_selected')
 	})
 
 

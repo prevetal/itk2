@@ -825,6 +825,7 @@ header .menu_item .sub_menu > .close_btn
 
     color: #018d38;
     background: #eefff5;
+    box-shadow: -4px 4px 4px 0 rgba(0, 0, 0, .25);
 }
 
 
@@ -1286,6 +1287,9 @@ header .mob_menu_btn.active .icon + .icon
 ---------------*/
 .page_head
 {
+    position: relative;
+    z-index: 5;
+
     margin-bottom: 28px;
     padding-top: 40px;
 }
@@ -1338,6 +1342,7 @@ header .mob_menu_btn.active .icon + .icon
     line-height: calc(100% + 4px);
 
     display: block;
+    align-self: center;
 
     letter-spacing: .56px;
 }
@@ -1353,7 +1358,6 @@ header .mob_menu_btn.active .icon + .icon
 {
     position: relative;
 
-    margin-top: 4px;
     margin-left: auto;
 }
 
@@ -1508,7 +1512,7 @@ header .mob_menu_btn.active .icon + .icon
     justify-content: flex-start;
 
     margin-left: -40px;
-    padding: 12px 0 10px;
+    padding: 16px 0;
 
     color: #d2e0ca;
 }
